@@ -1,0 +1,8 @@
+<div *ngIf="drinks$ | async as drinks" class="card">
+  <img class="card-img-top" [src]="drinks[0].strDrinkThumb" alt="Card image cap" />
+  <div class="card-body">
+    <h5 class="card-title">{{ drinks[0].strDrink }}</h5>
+    <p class="card-text">{{ drinks[0].strInstructions }}</p>
+    <a [routerLink]="['/drinks']">Back to all</a>
+  </div>
+</div>

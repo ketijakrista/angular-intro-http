@@ -1,0 +1,11 @@
+.drink-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 18rem;
+  margin: 10px 20px;
+  min-height: 150px;
+}

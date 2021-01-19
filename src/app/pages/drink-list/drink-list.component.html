@@ -1,0 +1,10 @@
+<div class="drink-container" *ngIf="drinks$ | async as drinks">
+  <div *ngFor="let drink of drinks" class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{drink.strDrink}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{drink.idDrink}}</h6>
+      <a [routerLink]="['/drinks/'+ drink.idDrink]" class="card-link">Read more...</a>
+    </div>
+  </div>
+</div>
+
